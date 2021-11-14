@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" 
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="dumpling.png">
+    <link rel="stylesheet" href="style.css">
+    <title>AniRadio</title>
+</head>
+<body>
+
+    
+    <ul id="sidebar" class="sidebar">
+        <div id="musiclist">
+
+        </div>
+        
+    </ul>
+
+    <div class="volume-container">
+        
+        <div class="volume-val">
+            <i class="fas fa-volume-up"></i>
+            50%
+        </div>
+    </div>
+    </div>
+
+   
+
+
+    <div class="music-container"> 
+        <div class="music-info">    
+            <h4 id="title">Song Name</h4>
+
+            <div id="track-time">
+                <div id="current-time">0:00</div>
+                <div id="track-length">4:00</div>
+            </div>
+
+            <div class="progress-container">
+                <div class="progress"></div>
+            </div>
+
+            <div class="track-mode">
+
+                <div id="playlist" class="track-mode-btn">
+                    <i class="fas fa-list"></i>
+                </div>
+                <div id="loop" class="track-mode-btn">
+                    <i class="fas fa-redo-alt"></i>
+                </div>
+                <div id="shuffle" class="track-mode-btn">
+                    <i class="fas fa-random"></i>
+                </div>
+
+          
+            </div>
+
+
+            <div id="music-type">
+                <div class="box-container">
+                <input type="radio" name="songs" id="openings">
+                <label>Openings</label>
+            </div>
+
+            <div class="box-container">
+                <input type="radio" name="songs" id="endings">
+                <label>Endings</label>
+            </div>
+                <div class="box-container">
+                    <input type="radio" name="songs" id="osts">
+                <label>Osts</label>
+                </div>
+            </div>
+            
+           
+
+        </div>
+        
+        <audio id="audio" autoplay="autoplay"></audio>
+
+        <div class="img-container">     
+            <img alt="music-cover" id="cover">
+        </div>
+
+        <div class="nav-container">  
+
+            <div class="navigation">
+                <button id="prev" class="action-btn">
+                    <i class="fas fa-backward"></i>
+                </button>
+    
+                <button id="play" class="action-btn action-btn-big">
+                    <i class="fas fa-play"></i>
+                </button>
+                
+                <button id="next" class="action-btn">
+                    <i class="fas fa-forward"></i>
+                </button>
+            </div>  
+
+             
+            <div class="slidecontainer">
+                <input type="range" id="volume-control">
+            </div>
+
+
+        </div>
+
+        
+       
+
+    </div>
+    
+    
+    
+</div>
+ 
+
+    
+<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" src="Data/all.json"></script>
+<script type="text/javascript" src="Data/eds.json"></script>
+<script type="text/javascript" src="Data/ops.json"></script>
+<script type="text/javascript" src="Data/osts.json"></script>
+
+</body>
+</html>
